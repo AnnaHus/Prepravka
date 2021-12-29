@@ -1,0 +1,25 @@
+﻿<Window x:Class="Prepravka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prepravka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="mainGr">
+        <Label x:Name="xLbl" Content="x" HorizontalAlignment="Left" Margin="443,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.58,-4.005"/>
+        <Label x:Name="yLbl" Content="y" HorizontalAlignment="Left" Margin="540,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="xTB" HorizontalAlignment="Left" Margin="464,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <TextBox x:Name="yTB" HorizontalAlignment="Left" Margin="561,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="priceLbl" Content="Cena bez daně" HorizontalAlignment="Left" Margin="446,133,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="priceTB" HorizontalAlignment="Left" Margin="561,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <RadioButton x:Name="alRB" Content="Alko" HorizontalAlignment="Left" Margin="469,185,0,0" VerticalAlignment="Top" GroupName="typNapoj" IsChecked="True"/>
+        <RadioButton x:Name="nonAlRB" Content="Nealko" HorizontalAlignment="Left" Margin="559,185,0,0" VerticalAlignment="Top" GroupName="typNapoj"/>
+        <Button x:Name="addBtn" Content="Vloz" HorizontalAlignment="Left" Margin="477,232,0,0" VerticalAlignment="Top" Width="50" Click="addNapoj"/>
+        <Button x:Name="removeBtn" Content="Odeber" HorizontalAlignment="Left" Margin="566,232,0,0" VerticalAlignment="Top" Width="50" Click="removeNapoj"/>
+        <Label x:Name="sumPriceLbl" Content="Celkovácena s daní" HorizontalAlignment="Left" Margin="59,372,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="sumPriceValueLbl" Content="0" HorizontalAlignment="Left" Margin="221,372,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="boxCan" Margin="29,42,371,92" Width="400" Height="300" Background="#FF562504"/>
+
+    </Grid>
+</Window>
